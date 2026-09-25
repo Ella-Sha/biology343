@@ -61,7 +61,6 @@ Copy `A1_Data_Excel.csv` from your Coding Challenge 1 project into this project'
 ```{r import-clean}
 cc1_data <- read.csv("~/Desktop/343 Data analysis/biology343/data/A1_Data_Excel.csv",header=T)
 cc1_data <- cc1_data[1:46,1:8]
-
 ```
 
 Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output.
@@ -108,7 +107,6 @@ Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4
 ```{r area-histogram, echo=F}
 library(ggplot2)
 ggplot(aes(x = ovary_area),data=cc1_data) + geom_histogram(binwidth= 1) + facet_wrap(.~Population.Type) + xlab("Population Type")+ ylab("Mean ovary Area(mm^2)") + labs(title = "Histogram of mean ovary area for sexual and asexual population")+  theme_classic()
-
 ```
 
 # Image
@@ -140,3 +138,4 @@ positpal::export_capture()
 ```
 
 `export_capture()` prints the name and location of the `my-capture-YYYYMMDD-HHMMSS.zip` it creates beside this file. **Each group member** uploads their own `.zip` to the **"CC2 — Coding Log (individual)"** dropbox on OnQ; the group's `.Rmd` and knitted `.html` go to your section's **TUT02-CC2** or **TUT03-CC2** folder. Submissions without the log are incomplete. If `export_capture()` fails, zip the `.capture` folder yourself and upload that instead. Do not commit the `.capture` folder or the `.zip` to GitHub (add a `.capture/` line to your repository's `.gitignore`).
+ddfdfd
