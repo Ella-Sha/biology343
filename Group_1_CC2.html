@@ -424,7 +424,12 @@ of these variables from the Coding Challenge 1 dataset:
 and dashes</em> format from the chapter, not R code.</p>
 <div id="tables" class="section level2">
 <h2>Tables</h2>
-<table>
+<table style="width:100%;">
+<colgroup>
+<col width="28%" />
+<col width="42%" />
+<col width="28%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>variable</th>
@@ -435,23 +440,26 @@ and dashes</em> format from the chapter, not R code.</p>
 <tbody>
 <tr class="odd">
 <td>population_type</td>
-<td></td>
-<td></td>
+<td>A-asexual, S-sexual</td>
+<td>N/A</td>
 </tr>
 <tr class="even">
 <td>ovary_width</td>
-<td></td>
-<td></td>
+<td>The width of the ovary, which is a reliable measurement for flower
+size</td>
+<td><span class="math inline">\({mm}\)</span></td>
 </tr>
 <tr class="odd">
 <td>ovary_height</td>
-<td></td>
-<td></td>
+<td>The height of the ovary, which is a reliable measurement for flower
+size</td>
+<td><span class="math inline">\({mm}\)</span></td>
 </tr>
 <tr class="even">
 <td>flower_number</td>
-<td></td>
-<td></td>
+<td>The average number of flowers produced by each individual in a
+sample of plants from each population</td>
+<td>counts</td>
 </tr>
 </tbody>
 </table>
@@ -503,7 +511,7 @@ the result as <code>area_means</code>. This chunk should run but be
 <em>Dynamic Tables</em>), including a <code>caption</code>. This chunk
 should show the <strong>table but not the code</strong>.</p>
 <table>
-<caption>Mean ovary area by population type</caption>
+<caption>Distribution of ovary area by population type</caption>
 <thead>
 <tr class="header">
 <th align="left">Population.Type</th>
@@ -567,7 +575,7 @@ photo, and the knitted <code>.html</code>, and that everything is
 <em>Timeline</em>; the 7-character code shown beside each commit on
 GitHub) below, formatted as in-line code with back-ticks.</li>
 </ol>
-<p>Final commit SHA: hello</p>
+<p>Final commit SHA:</p>
 </div>
 <div id="do-this-last" class="section level1 unnumbered">
 <h1 class="unnumbered">DO THIS LAST</h1>
