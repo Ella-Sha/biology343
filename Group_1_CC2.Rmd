@@ -61,7 +61,6 @@ Copy `A1_Data_Excel.csv` from your Coding Challenge 1 project into this project'
 ```{r import-clean}
 cc1_data <- read.csv("~/Desktop/343 Data analysis/biology343/data/A1_Data_Excel.csv",header=T)
 cc1_data <- cc1_data[1:46,1:8]
-
 ```
 
 Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output.
