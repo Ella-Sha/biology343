@@ -107,6 +107,7 @@ Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4
 ```{r area-histogram, echo=F}
 library(ggplot2)
 ggplot(aes(x = ovary_area),data=cc1_data) + geom_histogram(binwidth= 1) + facet_wrap(.~Population.Type) + xlab("Population Type")+ ylab("Mean ovary Area(mm^2)") + labs(title = "Histogram of mean ovary area for sexual and asexual population")+  theme_classic()
+
 ```
 
 # Image
