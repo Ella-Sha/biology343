@@ -37,7 +37,7 @@ Write the group members as an **ordered list** (Chapter 5, *Lists*). For each me
 
 The chunk below sets the default options for every other chunk in the document. Add the **chunk option** (Chapter 5, *Code Chunk Arguments*) that runs it without showing either the code or any output in the knitted report.
 
-```{r setup}
+```{r setup,include=F}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -50,9 +50,9 @@ Tables
 variable | description | units
 ------|---------|------
 population_type | A-asexual, S-sexual | N/A
-ovary_width     |                     | ${mm}$
-ovary_height    |  | ${mm}$
-flower_number |  | ${mm^2}$
+ovary_width     | The width of the ovary, which is a reliable measurement for flower size | ${mm}$
+ovary_height    | The height of the ovary, which is a reliable measurement for flower size | ${mm}$
+flower_number | The average number of flowers produced by each individual in a sample of plants from each population | counts
 
 # Import and clean the data
 
