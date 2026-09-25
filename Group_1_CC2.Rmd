@@ -49,10 +49,10 @@ Tables
 -----------------------
 variable | description | units
 ------|---------|------
-population_type |  | 
-ovary_width |  | 
-ovary_height |  | 
-flower_number |  | 
+population_type | A-asexual, S-sexual | N/A
+ovary_width     |                     | ${mm}$
+ovary_height    |  | ${mm}$
+flower_number |  | ${mm^2}$
 
 # Import and clean the data
 
@@ -97,7 +97,7 @@ area_means <- aggregate( ovary_area ~ Population.Type, data = cc1_data, mean)
 ```{r area-table, echo=F}
 library(knitr)
 
-kable(area_means, caption = "Mean ovary area by population type")
+kable(area_means, caption = "Distribution of ovary area by population type")
 ```
 
 # Embedded graph
@@ -137,4 +137,3 @@ positpal::export_capture()
 ```
 
 `export_capture()` prints the name and location of the `my-capture-YYYYMMDD-HHMMSS.zip` it creates beside this file. **Each group member** uploads their own `.zip` to the **"CC2 — Coding Log (individual)"** dropbox on OnQ; the group's `.Rmd` and knitted `.html` go to your section's **TUT02-CC2** or **TUT03-CC2** folder. Submissions without the log are incomplete. If `export_capture()` fails, zip the `.capture` folder yourself and upload that instead. Do not commit the `.capture` folder or the `.zip` to GitHub (add a `.capture/` line to your repository's `.gitignore`).
-ddfdfd
